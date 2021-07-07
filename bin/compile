@@ -11,4 +11,6 @@ fi
 
 echo '{ "root": "storybook-static/" }' > static.json
 
+export PATH="$BUILD_DIR/.heroku/node/bin:$BUILD_DIR/.heroku/yarn/bin":$PATH
+
 yarn build-storybook
